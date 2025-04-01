@@ -1,0 +1,45 @@
+
+a hook to perform some side effects
+
+useeffect(useeffect fxn, dependency array)
+runs at least once in the document despite the fact that a dependent array has been given
+when dependent array has been given it runs once then runs as the dependent array changes
+
+
+
+useContext (zustand or redux-toolkit)
+useState
+useRef
+useEffect
+contextApi
+tanstack router/ router-dom
+
+
+input tag for uploads
+<input hidden type='file' />
+
+change form button type to button for custom functionality
+by default (with no type) the type is set to submit auto
+<button type='button'> upload</button>
+
+//for image uploads 
+const imageRef=useRef()
+const handleImageSelect=()=>{
+	imageRef.current.click()
+}
+
+<form>
+	<button type=button  onClick={handleImageSelect}>
+		select image
+	</button>
+
+	<input type='file' hidden ref={imageRef}/>
+
+	<button type=button>
+		upload image
+	</button>
+</form>
+
+**SINGLE PAGE APPS**
+
+
